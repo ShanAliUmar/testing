@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add style</title>
+</head>
+
+<body>
+    <h1>Number: <span id="count">0</span></h1>
+    <button onclick="Add()">Add</button>
+    <button onclick="Sub()">Sub</button>
+    <button onclick="reset()">reset</button>
+    <script>
+        let count = 0;
+        function newData() {
+            const number = document.getElementById('count');
+            number.textContent = count;
+        }
+        function Add() {
+            count++;
+            newData();
+        }
+        function Sub() {
+            count--;
+            newData();
+        }
+        function reset() {
+            count = 0;
+            newData();
+        }
+    </script>
+</body>
+
+</html>
