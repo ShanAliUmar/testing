@@ -7,8 +7,6 @@ const image = document.querySelector(".image");
 const title = document.querySelector(".title");
 const prices = document.querySelector(".prices");
 
-
-
 const api = [
     iphone = {
         name:'iphone',
